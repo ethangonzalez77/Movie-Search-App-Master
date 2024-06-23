@@ -1,0 +1,81 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+body {
+  background-color: #22254b;
+  font-family: "Benne", serif;
+  margin: 0;
+}
+
+.footer h4 {
+  color: white;
+  text-align: center;
+} */
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: #0e0c0c;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+
+}
+
+/*** Jumbotrun Landing Page *****/
+
+#jumbo-landing{
+  background-image: linear-gradient(to right,rgba(4, 17, 39, 0.993) 20% , rgba(50, 63, 85, 0.993) 40%, rgba(73, 35, 95, 0) 100%),
+    url("./images/superman1.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.jumbo-search-button > button {
+  text-align: left;
+}
+
+/* .consensus{
+   position: absolute;
+   top: -19px;
+   left: 10px;
+   width: 38px;
+   height: 38px;
+   box-sizing: border-box;
+} */
+
+.consensus .tight{
+    display: inline-block;
+    transition: transform .2s;
+    transform: scale(1);
+}
+
+div.consensus div.outer_ring{
+  display: inline-block;
+  background-color: #081c22;
+  /* border-color: #21d07a; */
+  border-radius: 100%;
+  padding:6px;
+}
+
+/* .dates{
+  color: gray;
+} */
+
+.votes{
+  color: rgb(10, 192, 10);
+  font-weight: bold;
+}

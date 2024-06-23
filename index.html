@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  </head>
+  <body style="background-color: rgba(4, 17, 39, 0.993);">
+    <main class="">
+      <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <h3 class="logo d-flex align-items-center mb-2 mb-lg-0 "><span style="color: red">SK </span> Movies</h3>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 text-white">
+              <li class="nav-link px-2 text-secondary">Home</li>
+            </ul>
+            <!-- <form id="form" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" placeholder="Search" id="search" class="form-control form-control-dark text-bg-dark" aria-label="Search"/>
+            </form> -->
+            <div class="text-end"></div>
+          </div>
+        </div>
+      </header>
+      <div class="p-5 mb-4  " id="jumbo-landing">
+        <div class="container-fluid py-5">
+          <div class="display-5  fw-bold text-left text-white"> Skywalker Movies</div>
+          <p class="col-md-12 fs-4 pt-5 text-left text-white">Search for movies and TV series online for free.<br>
+            Millions of movies, TV shows and people to discover.
+          </p>
+          <div class="jumbo-search d-flex">
+            <form id="form" class=" mb-3 mb-lg-0 me-lg-3 col-6 pt-10" role="search">
+              <input type="search" id="search" placeholder="movies, series, shows ..." class="form-control form-control-lg" aria-label="Search" />
+              <div class="jumbo-search-button d-flex mt-4">
+                <button type="button" id="search-button" class="btn btn-danger w-10 btn-lg text-left">SEARCH</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container movies">
+      <main id="main" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3"></main>
+    </div>
+    <div class="container">
+      <h3 hidden id="recommendations-header" style="text-align: center" class="text-white m-5 p-4">
+        Recommendations based on search results
+      </h3>
+      <div id="recommendations" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3"></div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container">
+        <h4>Opensource with &#10084;&#65039; from AWS Nigeria DevOps Study Group</h4>
+      </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
